@@ -19,9 +19,10 @@ import org.springframework.context.*
 
 class SpringEventsGrailsPlugin {
 
-	def version = "1.2"
+	def version = "1.2.1"
 	def grailsVersion = "1.2.0 > *"
 	def dependsOn = [:]
+	def loadAfter = ["services"]
 	def observe = ["controllers", "services"]
 	def pluginExcludes = [
 			"grails-app/domain/**/*",

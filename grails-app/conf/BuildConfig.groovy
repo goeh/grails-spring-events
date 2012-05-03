@@ -18,16 +18,13 @@ grails.project.dependency.resolution = {
 		}
 	}
 	plugins {
-		build(":release:1.0.0.RC3") {
-			export = false
-		}
-		build(":svn:1.0.0.M1") {
+		build(":release:2.0.0") {
 			export = false
 		}
 		compile(":hibernate:$grailsVersion") {
 			export = false
 		}
-		test(":spock:0.6-SNAPSHOT") {
+		test(":spock:0.6") {
 			export = false
 		}
 	}
